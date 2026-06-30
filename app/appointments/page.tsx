@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import SideBar from '@/components/SideBar';
+import SideBar from '@/components/shared/SideBar';
 
 export default function AppointmentsPage() {
   return (

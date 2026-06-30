@@ -1,8 +1,8 @@
 'use client';
 
 import React, { useState } from 'react';
-import SideBar from '@/components/SideBar';
-import AppointmentForm from '@/components/AppointmentForm';
+import SideBar from '@/components/shared/SideBar';
+import AppointmentForm from '@/components/shared/AppointmentForm';
 
 interface Patient {
   id: string;
