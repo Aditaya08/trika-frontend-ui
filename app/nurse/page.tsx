@@ -2,8 +2,8 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import Logo from '@/components/Logo';
-import BookAppointmentDrawer from '@/components/BookAppointmentDrawer';
+import Logo from '@/components/shared/Logo';
+import BookAppointmentDrawer from '@/components/nurse/BookAppointmentDrawer';
 
 interface PatientQueueItem {
   id: string;

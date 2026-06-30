@@ -1,4 +1,5 @@
 import React from 'react';
+import { nurseNavItems } from '../nurse/navConfig';
 
 export interface NavItem {
   href: string;
@@ -51,7 +52,9 @@ export const baseNavItems: NavItem[] = [
 ];
 
 export const featureNavItems: NavItem[] = [
-  // Features will register their navigation items here
+  ...nurseNavItems
+  // In the consultation branch, the developer will add:
+  // ...consultationNavItems
 ];
 
 export const getSortedNavItems = (): NavItem[] => {

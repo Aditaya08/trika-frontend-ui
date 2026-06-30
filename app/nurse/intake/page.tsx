@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, Suspense } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
-import Logo from '@/components/Logo';
+import Logo from '@/components/shared/Logo';
 
 function IntakeFormContent() {
   const router = useRouter();
