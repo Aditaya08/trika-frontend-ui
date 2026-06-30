@@ -87,6 +87,12 @@ export default function CodrivaConsultView({ onPreview }: CodrivaConsultViewProp
 
         {/* Profile & Notifications */}
         <div className="flex items-center gap-4">
+          <a
+            href="/consultation"
+            className="bg-[#527a6a] hover:bg-[#5c8876] text-white border border-[#3e6052] px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all shadow-sm flex items-center gap-1.5"
+          >
+            ← Traditional EMR
+          </a>
           <button className="w-8 h-8 rounded-lg bg-[#527a6a] hover:bg-[#5c8876] flex items-center justify-center text-sm text-white border border-[#3e6052] transition-colors">
             🔔
           </button>

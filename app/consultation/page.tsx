@@ -1,29 +1,26 @@
 'use client';
 
-import React, { useState } from 'react';
-import CodrivaConsultView from '@/components/consultation/CodrivaConsultView';
-import CodrivaPrintPreview from '@/components/consultation/CodrivaPrintPreview';
+import React from 'react';
+import SideBar from '@/components/SideBar';
+import PrescriptionBuilderView from '@/components/consultation/PrescriptionBuilderView';
 
 export default function ConsultationPage() {
-  const [viewMode, setViewMode] = useState<'edit' | 'preview'>('edit');
-  const [previewData, setPreviewData] = useState<any>(null);
-
-  const handlePreview = (data: any) => {
-    setPreviewData(data);
-    setViewMode('preview');
-  };
-
-  const handleBackToEdit = () => {
-    setViewMode('edit');
-  };
-
   return (
-    <div className="min-h-screen bg-[#c5d3ca]">
-      {viewMode === 'edit' ? (
-        <CodrivaConsultView onPreview={handlePreview} />
-      ) : (
-        <CodrivaPrintPreview data={previewData} onBack={handleBackToEdit} />
-      )}
+    <div className="flex h-screen bg-[#eae8e6]">
+      <SideBar />
+
+      <div className="flex-1 flex flex-col overflow-hidden">
+        {/* MAIN WORK AREA */}
+        <div className="flex-1 overflow-y-auto bg-[#eae8e6] p-6">
+          <div className="flex items-center justify-between mb-4">
+            <h1 className="text-xl font-bold font-sans text-gray-800">Traditional EMR View (Friction-Heavy)</h1>
+            <a href="/consultation/emr" className="text-xs text-blue-600 hover:underline font-semibold flex items-center gap-1">
+              Switch to Conversational Consult →
+            </a>
+          </div>
+          <PrescriptionBuilderView />
+        </div>
+      </div>
     </div>
   );
 }
