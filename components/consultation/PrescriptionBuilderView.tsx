@@ -159,8 +159,8 @@ export default function PrescriptionBuilderView() {
                   }`}
                 >
                   <div className="flex items-center gap-2">
-                    <span className={`w-4 h-4 rounded text-[9px] flex items-center justify-center font-bold ${
-                      sec.active ? 'bg-[#1a1a1a] text-white' : 'bg-[#eee] border border-[#c4c4c4] text-gray-600'
+                    <span className={`w-5 h-5 rounded-full text-[10px] flex items-center justify-center font-bold ${
+                      sec.active ? 'bg-[#1a1a1a] text-white' : 'bg-[#eef0f2] border border-[#c4c4c4] text-gray-600'
                     }`}>
                       {sec.id}
                     </span>
