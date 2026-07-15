@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import SideBar from '@/components/SideBar';
+import SideBar from '@/components/shared/SideBar';
 import PrescriptionBuilderView from '@/components/consultation/PrescriptionBuilderView';
 
 export default function ConsultationPage() {
@@ -24,4 +24,3 @@ export default function ConsultationPage() {
     </div>
   );
 }
-
