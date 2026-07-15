@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-inter: "Inter", "Helvetica Neue", ui-sans-serif, system-ui, sans-serif;
+  --font-cormorant: "Cormorant Garamond", Georgia, "Times New Roman", serif;
 }
 
 @theme inline {
